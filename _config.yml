@@ -2,22 +2,26 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  标签: /tags/
+  # 分类: /categories/
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/jiyiqini"
+  #gitee: "#"
+  #csdn: "https://blog.csdn.net/jiyiqini"
+  #weibo: "#"
+  #rss: "#"
+  #zhihu: "#"
   #qq: "#"
   #weixin: "#"
-  #jianshu: "#"
+  # juejin: "https://juejin.im/user/57d61a96a22b9d006c600420"
+  jianshu: "https://www.jianshu.com/u/2cfd67f727c3"
   #douban: "#"
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:sh1426574360@163.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -33,7 +37,7 @@ root: /
 # Content
 
 # 文章太长，截断按钮文字
-excerpt_link: more
+excerpt_link: '更多详情'
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
@@ -46,10 +50,10 @@ open_in_new: false
 reward_type: 2
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
-# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
 # 微信二维码图片地址
-weixin: 
+weixin: /images/private/wechatpay.png
+# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
+alipay: /images/private/alipay.png
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -68,7 +72,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar:
+avatar: /img/avatar.jpg # ../../images/common/avatar.jpg
 
 #是否开启分享
 share_jia: true
@@ -111,20 +115,29 @@ slider:
 
 # 智能菜单
 # 如不需要，将该对应项置为false
-# 比如
-#smart_menu:
-#  friends: false
 smart_menu:
-  innerArchive: '所有文章'
+  innerArchive: '全部文章'
   friends: '友链'
-  aboutme: '关于我'
+  aboutme: '关于'
 
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+  『我的-掘金』: https://juejin.im/user/57d61a96a22b9d006c600420
+  『我的-Gitee』: https://gitee.com/jiyiqini
+  技术小黑屋: https://droidyue.com/
+  尼古拉斯.赵四 生死看淡，不服就干！: http://www.520monkey.com/
+  liu21st的博客: http://phpu.bokee.com/
+  三太子敖丙: https://www.cnblogs.com/aobing/
+  《软技能——代码之外的生存指南》: https://zhuanlan.zhihu.com/p/21926306
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 沉默，是一个人的狂欢！<br><br>热爱什么，就努力去做，<br>不求结果，只求无怨无悔。<br><br>最后，时光短暂，且行且珍惜~
+
+# 音乐
+music:
+  enable: true
+
+# 版权声明
+## 步骤：1.在theme/yilia/layout/_partial/article.ejs添加如下代码。2.yilia/source/main.0cf68a.css中添加.declare的css。3.themes/yilia/_config.yml中添加declare_type等系列配置。
+declare_type: 2 #0-关闭声明 1-文章对应的md文件里有declare: true属性，才有版权声明 2-所有文章均有版权声明
+licensee_url: https://creativecommons.org/licenses/by-nc-sa/4.0/      # 当前应用的版权协议地址。
+licensee_name: '知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议'      # 版权协议的名称
+licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png  # 版权协议的Logo
